@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/books.css">
+    <link rel="stylesheet" href="./public/css/common.css">
+    
+</head>
+<body>
+
+<%- include('./common/header.ejs')%> 
+<!-------------------------------  books entry:start ----------------------->
+
+<div class="container">
+    <h1 class="my-4 text-center display-5 fw-bold "><span>Children </span>Games</h1>
+
+    <!------------------------------- Refine Search:start ----------------------->
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <p>Price Range:<span class="text-white fw-bold"> Rs.100-5000</span></p>
+    
+    <div class="slidecontainer">
+      <input type="range" min="100" max="5000" value="2500" class="slider" id="myRange">
+      <p>Price: <span id="demo"></span></p>
+    </div>
+    
+        </div>
+        <div class="col">
+    
+        </div>
+        <div class="col">
+    
+        </div>
+        <!-- row:end -->
+    </div>
+    
+    
+    
+    
+    <!-- container :end -->
+    </div>
+    
+    
+    
+       <!------------------------------- Refine Search:End ----------------------->
+    
+
+    <div class="row g-5">
+      <div class="col-12 mx-auto">
+        <!-- <img src="image/aboutbanner.png" alt=""> -->
+      </div>
+      <!-- row:end -->
+</div>
+<% if(data.length>0) { %>
+
+
+<!-- row :start -->
+<div class="row g-5 ">
+    <% for(var i=0; i<data.length; i++){ %>
+    
+      
+   <!-- col 1:start -->
+    <div class="col-6 col-md-4 col-lg-2  box1 text-center py-3">
+         <div class="pos">    
+          <img   class="img-fluid" src="./public/images/<%=data[i].fileUpload %>" alt="">
+          <span class="badge bg-danger rounded-pill"><%=data[i].discountOffer %></span>
+        </div>
+           <span>
+            <i class="fa fa-inr fw-bold fs-5 py-2" aria-hidden="true"><%=data[i].productPrice %></i>
+         </span>
+         <div>
+          <button class="btn btn-sm blue text-white mt-2"> Quick View</button>
+          <button class="btn btn-sm blue text-white mt-2">Add to Cart</button> </div>   
+         </div>
+       <!-- coln1:end -->
+
+       <% } %>
+         <!-- row:end -->
+       </div>
+       <% } else { %>
+        NO RECORD FOUND
+        <% } %>
+
+
+
+    
+
+
+
+<!-- pagination :start -->
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center mt-4">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+   <li class="page-item"><a class="page-link" href="#">4</a></li>
+    <li class="page-item"><a class="page-link" href="#">5</a></li>
+    <li class="page-item"><a class="page-link" href="#">6</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+<!-- pagination :end -->
+<!-- container:end -->
+</div>
+<%- include('./common/footer.ejs')%> 
+<script src="./public/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: 'El Messiri', sans-serif;
+}
+.logo{
+    width:80px;
+    height:80px;
+}
+.text-blue {
+    color: #044463;
+}
+.blue{
+    background-color: #044463;
+}
+.text-pink{
+    color:#ff66c4;
+   }
+   .text-pinklight{
+       color:#f8a9da;
+      }
+   .text-purple{
+       color:#8c52ff;
+   }
+   .bg-pink{
+       background-color:#ff66c4;
+      }
+      .bg-pinklight{
+       background-color:#f8a9da;
+      }
+      .bg-purple{
+       background-color:#8c52ff;
+   }
+      .bg-purplelight{
+          background-color:#ad89f3;
+      }
+
+   .nav-item .nav-link{
+    color:#f8a9da;
+    font-weight: bold;
+    font-size:18px;
+   }
+
+   .nav-item .nav-link:hover{
+    background-color:black;
+    /* color:#ad89f3; */
+    color:white;
+   }
+   .btn:hover{
+    background-color:blue;
+   }
+   .dropdown-menu{
+    background-color:#f7deed;
+   }
+   .dropdown-item{
+    font-weight: bold;
+   }
+   .dropdown-mega .dropdown-menu{
+    width:100%;
+    /* background-color: black; */
+    margin-top:0;
+    max-height:615px;
+    overflow-y: scroll;  
+    
+}
+.list-group-item{
+    background-color:#cab3f7 ;
+    font-weight:bold
+}
+h5{
+    color:#044463;
+}

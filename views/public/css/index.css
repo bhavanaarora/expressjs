@@ -1,0 +1,162 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.fnt{
+    font-size:30px;
+    color:blue;
+}
+h1{
+    color:aquamarine;
+}
+p{
+    color:blue;
+}
+
+
+/************************************ carousel style start *******************************/
+#carousel1 .carousel-control-next {
+    width: 30px;
+    height: 30px;
+    background-color: dimgrey;
+    bottom: 180px !important;
+    top: auto;
+    opacity: .5;
+    right: -10px;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.card .card-img-overlay>div {
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    margin-top: 40%;
+    display: none;
+}
+
+.card .card-img:hover .card-img-overlay>div {
+    display: block;
+}
+
+.card .card-img a {
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.card .card-img a:hover {
+
+    color: #044463;
+    font-weight: bold;
+    font-size: 22px;
+    ;
+}
+
+.card p {
+    text-align: justify;
+}
+
+.card .card-img img {
+    width: 250px;
+    height: 300px;
+}
+
+
+
+.box1 {
+
+    padding: 10px;
+    background: rgba(255, 255, 255, .8);
+    box-shadow: (0 5px 15px rgba(0, 0, 0, .5));
+    font-size: 20px;
+    font-weight: bold;
+    color: #044463;
+
+}
+
+
+section {
+    padding: 0 200px;
+    background-image: url('image/bg1.jpg');
+    background-color: dimgray;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    max-width: 500px;
+    padding: 10px;
+    background: rgba(255, 255, 255, .2);
+
+    box-shadow: (0 5px 15px rgba(0, 0, 0, .5));
+}
+
+.box h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #044463;
+}
+
+/********************* carousel style end **********************************/
+
+
+
+/******************* multi carousel media style:start ********************/
+
+@media (max-width: 576px) {
+   #carousel1 .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    #carousel1 .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+#carousel1 .carousel-inner .carousel-item.active,
+#carousel1 .carousel-inner .carousel-item-next,
+#carousel1 .carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* small and up screens */
+@media (min-width: 578px) {
+
+    /* .carousel-inner .carousel-item-end.active, */
+    #carousel1 .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    #carousel1 .carousel-inner .carousel-item-start.active,
+    #carousel1 .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+
+}
+
+#carousel1 .carousel-inner .carousel-item-end,
+#carousel1 .carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
+/******************* multi carousel media style:end ********************/
+
+
+.badge{
+    position:absolute;
+    right:0.15rem;
+    padding:10px;
+}
+.pos{
+position:relative;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/contact.css">
+    <link rel="stylesheet" href="./public/css/common.css">
+</head>
+<body>
+    <%- include('./common/header.ejs')%> 
+    <!------------------------------- contact us form:start ----------------------->
+
+  <div class="container">
+    <h1 class="my-4 text-center display-5 fw-bold"><span>Contact</span> Us</h1>
+    
+      <div class="row g-5">
+        <div class="col-12 col-lg-6 mx-auto">
+            <h6 class="mt-2"> Fill up the form below to send us a message.We will contact you very soon.</h6>
+
+
+
+        <form class="needs-validation" method="post" action="">
+            <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control" id="name" autocomplete="off" placeholder="Enter name" name="name" required>
+                <label for="email">Name</label>
+              </div>
+          <div class="form-floating mb-3 mt-3">
+            <input type="email" class="form-control" id="email" autocomplete="off" placeholder="Enter email" name="email" required>
+            <label for="email">Email</label>
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control" id="comment" name="text" placeholder="Comment goes here" ></textarea>
+            <label for="comment">Address</label>
+          </div>
+          <div class="form-floating mb-3 mt-3">
+            <input type="text" class="form-control" id="mobile" placeholder="Enter mobile" name="mobile" required>
+            <label for="mobile">Mobile</label>
+          </div>
+         
+          <div class="form-floating">
+            <select class="form-select" id="sel1" name="sellist" required>
+              <option>Payment Related</option>
+              <option>Courier Related</option>
+              <option>Order Related</option>
+              <option>Affiliate Related</option>
+            </select>
+            <label for="sel1" class="form-label">Select Option:</label>
+          </div>
+          <div class="form-floating mb-3 mt-3">
+            <textarea class="form-control" id="comment" name="text" placeholder="Comment goes here"></textarea>
+            <label for="comment">Comments</label>
+          </div>
+          <div class="text-center"><button type="submit" class="btn blue text-white my-2 mx-auto">Submit</button></div>
+        </form>
+
+
+     <!-- col:end -->
+    </div>
+    <div class="col-12 col-lg-6 mx-auto">
+      <div><h4>Locate Us: On Map </h4></div>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28027.05203692335!2d77.18298917910153!3d28.58832970000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2f2aec6465d%3A0xe8caa6fc2586b3f5!2sThe%20Bookshop!5e0!3m2!1sen!2sin!4v1673800717987!5m2!1sen!2sin"  style="border: 2px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     
+
+    </div>
+    <!-- row:end -->
+    </div>
+      
+      
+
+</div>
+
+
+
+
+  <!------------------------------- contact us form:end ----------------------->
+  <%- include('./common/footer.ejs')%> 
+</body>
+</html>

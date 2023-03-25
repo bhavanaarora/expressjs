@@ -1,0 +1,25 @@
+html{
+    height:100%;
+}
+body{
+    background: linear-gradient(-100deg,#f7deed  50%, #cab3f7 50%);
+    display:flex;
+    flex-direction: column;
+    height:100%;
+}
+.text-blue {
+    color: #044463;
+}
+.blue{
+    background-color: #044463;
+}
+.box
+{   
+      background:rgba(0, 0, 0, .2);
+     box-shadow: (0 5px 15px rgba(0,0,0,.5));
+}
+.box1
+{   
+    background:rgba(255, 255, 255, .2);
+    box-shadow: (0 5px 15px rgba(0,0,0,.5));
+}

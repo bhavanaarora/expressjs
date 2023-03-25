@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    /* background-color:#3e3c3c; */
+    background: linear-gradient(-100deg,#5a5458  50%, #5a5458 50%);
+}
+/* #5a5458 */
+/* #474346 */
+.btn{
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: blue;
+    
+}
+.bg-gray{
+   background-color: #474346; 
+}
+.fa{
+    font-size: 18px;
+}
+
+
+
+.table-scroll tbody 
+{
+   /* position:absolute; */
+   position:relative;
+    overflow-y: scroll;
+      /* height:425px;  */
+
+}
+    .table-scroll  tr {
+    
+        width: 100%;
+        table-layout: fixed;
+        display: inline-table;
+    }
+
+

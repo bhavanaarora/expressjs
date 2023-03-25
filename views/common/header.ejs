@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../public/css/header.css">
+    <!-- <link rel="stylesheet" href="../public/css/common.css"> -->
+
+</head>
+   <nav class="navbar navbar-expand-xxl bg-black sticky-top ">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="../public/images/logo.png">
+      </a>
+      <!-- content : search login and cart for below xxl screen -->
+      <div class=" d-xxl-none m-sm-auto">
+        <button class="btn text-white " data-bs-toggle="modal" data-bs-target="#modallogin"  type="submit"><i class="fa fa-user text-white"></i> Login</button>
+        <button  class="btn text-white" type="submit"><i class="fa fa-shopping-cart text-white"></i> Cart</button>
+        <button  class="btn text-white " type="submit"><i class="fa fa-search text-white "></i> Search</button>
+        </div>
+        <!-- content  end: search login and cart for below xxl screen -->
+
+      <!-- toggler button start -->
+      <button class="navbar-toggler bg-purple" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- toggler button end -->
+      <!-- offcanvas start -->
+      <div class="offcanvas offcanvas-end khaki
+      " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">ONLINE TOY STORE</h5>
+          <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body ">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item ">
+              <a class="nav-link text-pinklight  fw-bold" aria-current="page" href="/">Home</a>
+            </li>
+            <!-- nav dropdown1:start -->
+            <li class="nav-item dropdown dropdown-mega position-static ">
+              <a class="nav-link  fw-bold text-pinklight dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+               All Toys
+              </a>
+              <div class="dropdown-menu scrollabe-menu shadow">
+                <div class="mega-content px-md-4">
+                  <div class="container-fluid ">
+                    <div class="row">
+                      <!-- col1:start -->
+                      <div class=" col-12 col-xxl-3  py-4 px-xl-5 px-4 khaki">
+                        <h5 class="fw-bold">Shop by Category</h5>
+                        <div class="list-group">
+                          <a href="#" class="list-group-item">
+                            Action Figure & Play Sets 
+                          </a>
+                          <a href="#" class="list-group-item">
+                            Baby, Toddler & Preschool Learning Toys
+                          </a>
+                          <a href="#" class="list-group-item">
+                            Bikes, Scooters & Rideons
+                            </a>
+                          <a href="#" class="list-group-item">
+                            Building Sets & Construction Blocks
+                          </a>
+                          <a href="#" class="list-group-item">
+                            Dolls, Collectibles & Playsets
+                          </a>
+                          <a href="#" class="list-group-item">
+                            Games & Puzzles
+                          </a>
+                          <a href="#" class="list-group-item">
+                          Kids Arts & Crafts
+                          </a>
+                          <a href="#" class="list-group-item">
+                            Learning 
+                            </a>
+                            <a href="#" class="list-group-item">
+                              Outdoor Play
+                              </a>
+                              <a href="#" class="list-group-item">
+                               Pretend Play & Dressup
+                                </a>
+                                <a href="#" class="list-group-item">
+                                 Vehicles & Remote Control
+                                  </a>
+                                  <a href="#" class="list-group-item">
+                                    Plush & Stuffed Animals
+                                    </a>
+                          <!-- list-group:end -->
+                        </div>
+                        <!-- col1:end -->
+                      </div>
+
+
+                      <!-- col2:start -->
+                      <div class=" col-12 col-xxl-3  py-4 px-xl-5 px-4 khaki">
+                        <h5 class="fw-bold">Shop by Brand</h5>
+                        <div class="list-group">
+                          <a href="#" class="list-group-item">
+                           Cubelelo
+                          </a>
+                          <a href="#" class="list-group-item">
+                            FunSkool
+                          </a>
+                          <a href="#" class="list-group-item">
+                         Jurasic World
+                          </a>
+                          <a href="#" class="list-group-item">
+                           Kipa
+                          </a>
+                          <a href="#" class="list-group-item">
+                           Li'l Wizards
+                          </a>
+                          <a href="#" class="list-group-item">
+                            Mazorette
+                           </a>
+                           <a href="#" class="list-group-item">
+                            Mastela
+                           </a>
+                           <a href="#" class="list-group-item">
+                            Masters of the Universe
+                           </a>
+                           <a href="#" class="list-group-item">
+                            NHR
+                           </a>
+                           <a href="#" class="list-group-item">
+                            Okplay
+                           </a>
+                           <a href="#" class="list-group-item">
+                           Rabitat
+                           </a>
+                          <!-- list-group:end -->
+                        </div>
+                        <!-- col2:end -->
+                      </div>
+
+                      <!-- col3:start -->
+                      <div class="col-12 col-xxl-3  py-4 px-xl-5 px-4 khaki">
+                        <h5 class="fw-bold">Shop by Age</h5>
+                        <div class="list-group">
+                          <a href="../babytoys.ejs" class="list-group-item">
+                            0-12 Months
+                          </a>
+                          <a href="#" class="list-group-item">
+                            12-24 Months
+                          </a>
+                          <a href="#" class="list-group-item">
+                           2-5 Years
+                          </a>
+                          <a href="/toyage8" class="list-group-item">
+                           5-8 Years
+                          </a>
+                          <a href="#" class="list-group-item">
+                           8-12 Years
+                          </a>
+                          <a href="#" class="list-group-item">
+                           12+ Children
+                           </a>
+                          <!-- list-group:end -->
+                        </div>
+                        <!-- col3:end -->
+                      </div>
+
+                      <!-- col4:start -->
+                      <div class="col-12 col-xxl-3   py-4 px-xl-5 px-4 khaki">
+                        <h5 class="fw-bold">Shop by Price</h5>
+                        <div class="list-group">
+                          <a href="#" class="list-group-item ">
+                            ₹0.00 - ₹10,000.00 
+                          </a>
+                          <a href="#" class="list-group-item">
+                            ₹10,000.00 - ₹20,000.00
+                          </a>
+                          <a href="#" class="list-group-item">
+                            ₹20,000.00 - ₹30,000.00 
+                          </a>
+                          <a href="#" class="list-group-item">
+                            ₹30,000.00 - ₹40,000.00 
+                          </a>
+                         
+                          <!-- list-group:end -->
+                        </div>
+                        <!-- col4:end -->
+                      </div>
+
+                      <!-- row:end -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </li>
+            <!-- nav dropdown1:end -->
+
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-pinklight" href="/games">Games</a>
+            </li>
+           
+            
+            <!-- nav dropdown1:start -->
+            <li class="nav-item dropdown">
+              <a class="nav-link  dropdown-toggle fw-bold " href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                Categories
+              </a>
+
+              <!-- dropdown1 start -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+               
+                <!-- sub-dropdown1 start -->
+                <li class="dropend ">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Actin Figure & Play Sets</a>
+                  <ul class="dropdown-menu orange">
+                    <li><a href="" class="dropdown-item">Architecture</a></li>
+                    <li><a href="" class="dropdown-item">Art Forms</a></li>
+                    <li><a href="" class="dropdown-item">Art Treatment & Subject</a></li>
+                    <li><a href="" class="dropdown-item">Dance & Other Performing Arts</a></li>
+                    <li><a href="" class="dropdown-item">Film,T.V & Radio</a></li>
+                    <li><a href="" class="dropdown-item">Art Treatment</a></li>
+                                
+                </ul>
+              </li>
+                  <!-- sub-dropdown1 end -->           
+                             
+
+                <li><a class="dropdown-item" href="#">PreSchool Learning Toys</a></li>
+                <li><a class="dropdown-item" href="#">Bike Scooters & Rideons</a></li>
+
+                   <!-- sub-dropdown2 start -->
+                   <li class="dropend ">
+                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Building Sets & Construction Blocks</a>
+                    <ul class="dropdown-menu ">
+                      <li><a href="" class="dropdown-item">Computer Science</a></li>
+                      <li><a href="" class="dropdown-item">Art Forms</a></li>
+                      <li><a href="" class="dropdown-item">Art Treatment & Subject</a></li>
+                      <li><a href="" class="dropdown-item">Dance & Other Performing Arts</a></li>
+                      <li><a href="" class="dropdown-item">Film,T.V & Radio</a></li>
+                      <li><a href="" class="dropdown-item">Art Treatment</a></li>
+                            
+                  </ul>
+                </li>
+                    <!-- sub-dropdown2 end -->
+
+                <li><a class="dropdown-item" href="#">Dolls Collectible & Playsets</a></li>
+                <li><a class="dropdown-item" href="#">Games & Puzzles</a></li>
+                <li><a class="dropdown-item" href="#">Kids Arts & Crafts</a></li>
+
+                   <!-- sub-dropdown3 start -->
+                   <li class="dropend ">
+                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Learning</a>
+                    <ul class="dropdown-menu ">
+                      <li><a href="" class="dropdown-item">Architecture</a></li>
+                      <li><a href="" class="dropdown-item">Art Forms</a></li>
+                      <li><a href="" class="dropdown-item">Art Treatment & Subject</a></li>
+                      <li><a href="" class="dropdown-item">Dance & Other Performing Arts</a></li>
+                      <li><a href="" class="dropdown-item">Film,T.V & Radio</a></li>
+                      <li><a href="" class="dropdown-item">Art Treatment</a></li>
+                                  
+                  </ul>
+                </li>
+                    <!-- sub-dropdown3 end -->
+
+                <li><a class="dropdown-item" href="#">Outdoor Play</a></li>
+                <li><a class="dropdown-item" href="#">Pretend Play & Dressup</a></li>
+                <li><a class="dropdown-item" href="#">Vehicles & Remote Control</a></li>
+                <li><a class="dropdown-item" href="#">Plush & Stuffed Animals</a></li>
+                 <li><a class="dropdown-item" href="#"></a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li class="dropdown-item bg-purplelight text-center fw-bold">ONLINE TOY STORE</li>
+              </ul>
+            </li>
+            <!-- nav dropdown1:end -->
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Age Wise
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">0-12 Months</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">12-24 Months</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">2-5 Years</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">5-8 Years</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">8-12 Years</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">12+ Children</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/babytoys">Baby & Toddler</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/books">Books</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact Us</a>
+            </li>
+          </ul>
+          <!-- nav item list end --> 
+
+
+        <!-- offcanvas-body end -->
+      </div>
+      <!-- offcanvas:end -->
+    </div>
+    <form class=" d-none d-xxl-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn bg-purplelight text-white fw-bold me-2" type="submit">Search</button>
+    </form>
+    <div class="d-none d-xxl-block">
+      <%- include('login.ejs')%> 
+      <button class="btn bg-purplelight text-white fw-bold" type="submit"  data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-user text-white"></i> Login</button>
+      <button  class="btn bg-purplelight text-white fw-bold me-2 " type="submit"><i class="fa fa-shopping-cart text-white"></i> Cart</button>
+      
+      <!-- <a href="/login2" class="btn btn-primary">Login</a> -->
+      
+      </div>
+    
+    <!-- container-fluid:end -->
+    </div>
+    <!-- navbar:end -->
+    
+  </nav>
+    <!-- navbar end -->    
+     
+   
+    
+    
+    
+    
+        <!--Login Modal:start -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <div class="modal-header bg-primary">
+                      <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Login</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form method="post" action="/login">
+                          <div class="form-group">
+                              <label class="form-label">Email Id</label>
+                              <input class="form-control" type="email" name="email">
+                          </div>
+                          <div class="form-group">
+                              <label class="form-label">Password</label>
+                              <input class="form-control" type="password" name="password">
+                          </div>
+                          
+                      <div class="mt-3 text-center">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </form>
+                  </div>
+                  <div class="modal-footer bg-gray mx-auto">
+                     
+                   
+
+                      <div class="mt-4 text-center">
+                        <h5>New User: <a type="button" class="fw-bold" data-bs-target="#exampleModalToggle2"
+                                data-bs-toggle="modal" data-bs-dismiss="modal">SignUp</a> </h5>
+                    </div>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+    
+      <!-- login modal end -->
+    
+ <!-- sign up modal start -->
+ <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">SignUp</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- <div class="form"> -->
+          <form method="post" action="/signup">
+          <div class="form-group">
+            <label class="form-label">First Name</label>
+            <input class="form-control" type="text" name="firstname">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Last Name</label>
+          <input class="form-control" type="text" name="lastname">
+      </div>
+            <div class="form-group">
+                <label class="form-label">Email Id</label>
+                <input class="form-control" type="email" name="email">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Mobile</label>
+              <input class="form-control" type="tel" name="mobile">
+          </div>
+            <div class="form-group">
+                <label class="form-label">Password</label>
+                <input class="form-control" type="password" name="password">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Confirm Password</label>
+              <input class="form-control" type="password" name="confirmPassword">
+          </div>
+          
+        
+        <div class="mt-3 text-center">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </form>
+    </div>
+      <div class="modal-footer ">
+          <div class="mt-4 mx-auto text-center ">
+          <h5>Existing User: <a type="button" class="fw-bold" data-bs-target="#exampleModal"
+                  data-bs-toggle="modal" data-bs-dismiss="modal">Login</a> </h5>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- signup modal end -->
+     
+
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../public/css/dindex.css">
+  <link rel="stylesheet" href="../public/css/scroll.css">
+
+</head>
+
+<body>
+  <div class="container-fluid mx-auto my-3 ">
+    <div class="row">
+
+      <div class="col">
+        <%- include('header.ejs')%>
+      </div>
+
+    </div>
+  </div>
+  <div class="row pt-5">
+    <div class="col-12 col-lg-2">
+      <%- include('left.ejs')%>
+    </div>
+
+    <div class="col-12 col-lg-4">
+      <%- include('product_add.ejs')%>
+    </div>
+
+
+    <div class="col-12 col-lg-6 mx-auto">
+      <div class="container bg-gray pb-2">
+        <h2 class="text-center text-white">View Product</h2>
+
+        <% if(data.length>0) { %>
+          <table class="table  table-dark table-striped scrolldown table-responsive ">
+            <thead class="text-center">
+              <tr>
+                <th scope="col">Index</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Discount</th>
+                <th scope="col">Image</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody class="text-center">
+              <% for(var i=0; i<data.length; i++){ %>
+
+                <tr>
+                  <td>
+                    <%= i %>
+                  </td>
+                  <td>
+                    <%=data[i].productName %> 
+                  </td>
+                  <td>
+                    <%=data[i].productPrice %>
+                  </td>
+                  <td>
+                    <%=data[i].discountOffer %>
+                  </td>
+                  <td>
+                    <img class="img-fluid" src="./public/images/<%=data[i].fileUpload %>">
+                  </td>
+
+
+                  <td>
+                    <div class="d-grid gap-2 ">
+                      <a href="/edit/<%= data[i]._id %>" class="btn btn-secondary mb-2"><i class="fa fa-pencil-square-o"
+                          aria-hidden="true"> Edit</i></a>
+                      <a href="/delete/<%= data[i]._id %>" class="btn btn-secondary"><i class="fa fa-trash"
+                          aria-hidden="true"> Delete</i></a>
+                      <a href="/show/<%= data[i]._id %>" class="btn btn-secondary"><i class="fa fa-pencil-square-o"
+                          aria-hidden="true"> View</i></a>
+                    </div>
+
+
+                  </td>
+                </tr>
+
+
+
+                <% } %>
+            </tbody>
+          </table>
+          <% } else { %>
+            NO RECORD FOUND
+            <% } %>
+<div class="text-center  d-flex justify-content-center">
+      <select class="bg-secondary text-white fw-bold">
+        <option>select category</option>
+        <option>games</option>
+        <option>Children Books</option>
+      </select> 
+
+      <button class="btn btn-secondary"> view category</button>
+    </div>
+
+     <!-- container:end -->
+      </div>
+
+
+
+    </div>
+
+    <!-- row:end -->
+  </div>
+
+</body>
+
+</html>

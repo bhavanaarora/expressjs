@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+  
+    <div class="container-fluid mx-auto ">
+        <div class="row">
+            
+            <div class="col">
+                <%- include('header.ejs')%>
+            </div>
+
+        </div>
+    </div>
+    <!-- <div class="row pt-5"> -->
+        <!-- <div class="col-12 col-lg-2"> -->
+            <!-- <%- include('left.ejs')%> -->
+        <!-- </div> -->
+        <!-- <div class="col-12 col-lg-4 pt-3 "> -->
+            <!-- Add Product form -->
+            <div class="container-fluid bg-gray">
+                <h2 class="text-center text-white">Add Product</h2>
+                    <form method="post" action="/addproduct">
+                        <select id="formselect" class= "form-select mb-3" aria-label="Default">
+                            <option selected>Select Category</option>
+                            <option value="T001">Games</option>
+                            <option value="T002">Children Books</option>
+                            <option value="T003">Toddlers Toys</option>
+                          </select>
+                        <div class="form-group mb-3">
+                            <label class="text-white form-label">Category Code: </label>
+                            <input id="category" type="text" class="form-control" name="category">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label class="text-white form-label">File Upload: </label>
+                            <input type="file" class="form-control mt-2"  name="fileUpload">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label class="text-white form-label">Product Name: </label>
+                            <input type="text" class="form-control" name="productName">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label class="text-white form-label">Product Price: </label>
+                            <input type="text" class="form-control" name="productPrice">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label class="text-white form-label">Discount Offer: </label>
+                            <input type="text" class="form-control" name="discountOffer">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label class="text-white form-label">Description: </label>
+                            <textarea class="form-control" name="description"></textarea>
+                        </div>
+                         <div class="text-center p-3">
+                        <input class="btn btn-secondary " type="submit" value="Submit" data-bs-toggle="popover"  data-bs-content="You have login successfully">
+                      <input class="btn btn-secondary" type="reset"  value="Reset" >
+                     
+                    </div>
+                        <!-- form:end -->
+                </form>
+                </div>
+                <!-- col:end -->
+        <!-- </div> -->
+       
+        
+        <!-- row:end -->
+    <!-- </div> -->
+
+
+    <script>
+    $("#formselect").on("change",function(){
+        var getvalue=$('#formselect').val();
+        $('#category').val(getvalue);
+    });
+      
+    </script>
+
+
+</body>
+
+</html>
