@@ -1,15 +1,7 @@
 const mongoose=require('mongoose')
-//const bcrypt=require('bcrypt')
+require('../database_connect');
 const bcrypt=require('bcryptjs');
-const url="mongodb+srv://bhavanaarora:bhavana5@cluster0.zacdrqs.mongodb.net/toystore?retryWrites=true&w=majority"
-mongoose.connect(url,{
-    useNewUrlParser:true,
-    useUnifiedTopology:true
- })
- .then(()=>console.log("connection successful"))
- .catch((err)=>console.log(err));
-
- const userSchema=mongoose.Schema({
+const userSchema=mongoose.Schema({
     firstname:
     {
       type:String,

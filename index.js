@@ -2,18 +2,24 @@ let express = require('express');
 let app = express();
 let router = express.Router();
 let path = require('path');
-let userModel = require('./model/signup');
-let addProduct = require('./model/addproduct');
+const dotenv= require ('dotenv');
+dotenv.config({path:'./config.env'});
+let userModel = require('./views/model/signup');
+let addProduct = require('./views/model/addproduct');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 mongoose.set('strictQuery', false);
+const Port=process.env.PORT;
+
 
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 
-let productrouter = require('./routes/viewproduct')
-let userrouter = require('./routes/user');
-let gamesrouter = require('./routes/games');
+
+
+let productrouter = require('./views/routes/viewproduct')
+let userrouter = require('./views/routes/user');
+let gamesrouter = require('./views/routes/games');
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -211,5 +217,7 @@ app.use('/', productrouter);
 app.use('/', userrouter);
 app.use('/', gamesrouter);
 
-app.listen(4200);
+app.listen(Port,()=>{
+    console.log(`server is running on ${Port}`);
+});
 console.log("connected");
