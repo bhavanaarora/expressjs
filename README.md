@@ -32,6 +32,5 @@ Admin login area
 Admin dashboards page
 Modules :
 
-Admin Users listing/Add/Edit/Delete pages
-Admin Category Module listing/Add/Edit/Delete pages
-Admin Products Module listing/Add/Edit/Delete pages
+1-Admin Users listing/Add/Edit/Delete pages
+2-Admin Products Module listing/Add/Edit/Delete pages
