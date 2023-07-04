@@ -1,6 +1,6 @@
 # NodeJS-ExpressJS-MongoDB-AdminPanel
 
-#### stack:
+#### Stack:
 1-Node.js
 MongoDB
 
