@@ -10,10 +10,6 @@ MongoDB
 2-User Management
 3-Product Management
 
-#### Packages:
- 1-Express.js
- 2-Express.session
-
  
 This repository provides a node js MongoDB admin panel which offers various modules and features. This repository cover
 
