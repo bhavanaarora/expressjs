@@ -22,7 +22,7 @@ Web Admin Panel CRUD and Auth example using Express (Web framework for node.js) 
 
 ### How to Start?
 
-npm install
+```npm install```
 
 ### How to Run?
 
