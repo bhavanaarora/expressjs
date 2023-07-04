@@ -19,18 +19,24 @@ This repository provides a node js MongoDB admin panel which offers various modu
 
 Web Admin Panel CRUD and Auth example using Express (Web framework for node.js) and Mysql
 
-how to start?
+#### How to Start?
 
 npm install
 
-node app.js
+#### How to Run?
 
-Features
+node index.js
+
+#### Features:
+
 Connect to databases
 Admin html theme integration
 Admin login area
 Admin dashboards page
-Modules :
+
+#### Modules :
 
 1-Admin Users listing/Add/Edit/Delete pages
+
+
 2-Admin Products Module listing/Add/Edit/Delete pages
