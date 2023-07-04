@@ -1,10 +1,10 @@
 # NodeJS-ExpressJS-MongoDB-AdminPanel
 
-#### Stack:
+### Stack:
 1-Node.js
 MongoDB
 
-#### Includes:
+### Includes:
 
 1-Authentication
 2-User Management
