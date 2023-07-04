@@ -26,7 +26,7 @@ Web Admin Panel CRUD and Auth example using Express (Web framework for node.js) 
 
 ### How to Run?
 
-node index.js
+```node index.js```
 
 ### Features:
 
