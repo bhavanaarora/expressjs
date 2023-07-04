@@ -48,7 +48,7 @@ Admin dashboards page
 
 
 ### Links
-[visit website](https://long-erin-duck-tux.cyclic.app/)
+[visit Live Project](https://long-erin-duck-tux.cyclic.app/)
 
 
 ### Screenshots:
