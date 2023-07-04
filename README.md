@@ -7,7 +7,9 @@ MongoDB
 ### Includes:
 
 1-Authentication
+
 2-User Management
+
 3-Product Management
 
  
@@ -26,8 +28,11 @@ node index.js
 ### Features:
 
 Connect to databases
+
 Admin html theme integration
+
 Admin login area
+
 Admin dashboards page
 
 ### Modules :
