@@ -47,6 +47,5 @@ Admin dashboards page
 2-Admin Products Module listing/Add/Edit/Delete pages
 
 
-### Link:
-[visit website]
-(https://long-erin-duck-tux.cyclic.app/)
+### Links
+[visit website](https://long-erin-duck-tux.cyclic.app/)
